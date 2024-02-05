@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,600;1,700&display=swap');
+
+
+.container{
+    
+
+    position: relative;
+    z-index: 0;
+}
+
+.container_overlay{
+    width: 100%;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+
+    font-family: 'KoHo', sans-serif;
+
+    background: linear-gradient(
+        0deg, 
+        rgba($color: #1F2937, $alpha: 1) 5%,
+        rgba($color: #1F2937, $alpha: 0.6) 60%,
+        rgba($color: #1F2937, $alpha: 0) 100%
+    );
+}
+
+
+
+.image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+.country{
+    color: rgba($color: white, $alpha: 0.8);
+}
+
+.datetime{
+    color: rgba($color: white, $alpha: 0.7);
+}
+
+.city{
+    color: rgba($color: white, $alpha: 0.6);
+}
+
+.btn{
+    font-weight: bold;
+    color: white;
+
+    font-size: larger;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+
+    transition: 250ms;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+.secondary_container{
+    position: relative;
+    transform: translateY(-4rem);
+    
+    font-size: larger;
+    color: white;
+
+    background: linear-gradient(
+        0deg,
+        #1F2937 90%,
+        transparent 100%
+    );
+
+    z-index: 51;
+
+    &_no_transform{
+        @extend .secondary_container;
+        background: none;
+        background-color: #1F2937;
+    }
+}

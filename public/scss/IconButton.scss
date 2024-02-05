@@ -1,0 +1,10 @@
+.iconButton{
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    transition: 150ms;
+
+    &:hover{
+        background-color: rgba($color: gray, $alpha: 0.2);
+        scale: 1.2;
+    }
+}

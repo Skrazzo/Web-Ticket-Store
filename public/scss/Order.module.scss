@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+    height: 75px;
+
+    overflow: hidden;
+    z-index: 0;
+}
+
+.overlay_container{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 50;
+
+    background: linear-gradient(
+        270deg, 
+        rgba($color: #273446, $alpha: 1) 80%,
+        rgba($color: #273446, $alpha: 0.9) 85%,
+        rgba($color: #273446, $alpha: 0.6) 90%,
+        rgba($color: #273446, $alpha: 0) 100%
+    );
+}
+
+.image{
+    height: 100%;
+    object-fit: cover;
+}

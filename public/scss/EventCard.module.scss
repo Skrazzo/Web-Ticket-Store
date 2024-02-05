@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,600;1,700&display=swap');
+
+.container{
+    position: relative;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    height: 300px;
+    min-width: calc(16/7 * 300px);
+    aspect-ratio: 16/7;
+    z-index: 0;
+
+}
+
+
+
+.main_container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(
+        90deg, 
+        rgba($color: #1A1A1A, $alpha: 0.9) 40%,
+        rgba($color: #1A1A1A, $alpha: 0.5) 60%,
+        rgba($color: #1A1A1A, $alpha: 0) 100%
+    );
+
+    z-index: 50;
+
+    font-family: 'KoHo', sans-serif;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.country{
+    color: rgba($color: white, $alpha: 0.8);
+}
+
+.datetime{
+    color: rgba($color: white, $alpha: 0.7);
+}
+
+.city{
+    color: rgba($color: white, $alpha: 0.6);
+}
+
+.btn{
+    font-weight: bold;
+    color: white;
+
+    font-size: larger;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+
+    transition: 250ms;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+@media (max-width: 640px) {
+    .container{
+        min-width: 100%;
+        //aspect-ratio: 5/1;
+
+        min-height: 400px;
+    }
+
+    .main_container{
+        background: linear-gradient(
+            320deg, 
+            rgba($color: #1A1A1A, $alpha: 0.9) 30%,
+            rgba($color: #1A1A1A, $alpha: 0.5) 80%,
+            rgba($color: #1A1A1A, $alpha: 0) 100%
+        );
+    }
+}

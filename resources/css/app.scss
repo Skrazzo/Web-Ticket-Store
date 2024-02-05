@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.divider{
+    width: 100%;
+    border: 1px solid rgba($color: gray, $alpha: 0.1);
+}
+
